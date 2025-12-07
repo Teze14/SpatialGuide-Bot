@@ -27,3 +27,29 @@ run_mr.sh - Script de Inicio. Inicializa el entorno virtual de Python (venv) y e
 mic_mr.py - "Módulo de entrada de voz (no incluido, pero requerido). Contiene la función escuchar_y_transcribir() para usar Whisper o similar."
 
 [Código ESP32/Motor] - Firmware de las placas de control (no incluido). Recibe comandos de PWM por serial (/dev/ttyUSBx) para el control físico de los motores.
+
+# Instalación y Configuración
+
+# Clonar el Repositorio:
+
+Bash
+git clone https://github.com/Teze14/SpatialGuide-Bot.git
+cd Autonomous-Spatial-Guide-Bot
+
+# Variables de Entorno: Es OBLIGATORIO configurar tu clave API de Google Gemini:
+
+Bash
+export GOOGLE_API_KEY='TU_CLAVE_AQUI'
+
+# Configuración de Hardware:
+
+Asegúrate de que la Webcam esté disponible en el índice 0.
+Verifica que los puertos Serial para los controladores de motor ESP32 sean /dev/ttyUSB0 (Izquierda) y /dev/ttyUSB1 (Derecha).
+
+Configura el bus I2C para el MPU6050 (el código asume bus 7 y dirección 0x68).
+
+# Ejecución
+Usa el script de inicio para asegurar que el entorno virtual esté activo:
+
+Bash
+./run_mr.sh
