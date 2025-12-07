@@ -35,6 +35,7 @@ mic_mr.py - "Módulo de entrada de voz (no incluido, pero requerido). Contiene l
 Bash
 
 git clone https://github.com/Teze14/SpatialGuide-Bot.git
+
 cd Autonomous-Spatial-Guide-Bot
 
 -Variables de Entorno: Es OBLIGATORIO configurar tu clave API de Google Gemini:
