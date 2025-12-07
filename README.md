@@ -58,3 +58,13 @@ Usa el script de inicio para asegurar que el entorno virtual esté activo:
 Bash
 
 ./run_mr.sh
+
+# Copyright
+
+2025 Héctor Castillo Guerra
+
+2025 Jesús Emiliano García Jiménez  
+
+2025 Andrés Méndez Cortez  
+
+2025 Nabor Sebastían Toro García
