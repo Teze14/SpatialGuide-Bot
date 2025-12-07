@@ -1,3 +1,20 @@
+'''Copyright 2025 Jesús Emiliano García Jiménez
+             2025 Héctor Castillo Guerra
+             2025 Andrés Méndez Cortez
+             2025 Nabor Sebastían Toro García
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.'''
+
 import os
 import sys
 import cv2
@@ -10,7 +27,7 @@ from google.genai import types
 from google.genai.errors import APIError
 
 # =================================================================
-# ⚙️ CONFIGURACIÓN Y PARÁMETROS FIJOS
+# CONFIGURACIÓN Y PARÁMETROS FIJOS
 # =================================================================
 
 # Directorio donde se guardará la imagen.
@@ -30,7 +47,7 @@ FIXED_PROMPT = (
 )
 
 # =================================================================
-# 📢 FUNCIÓN DE SÍNTESIS DE VOZ (gTTS + PYGAME)
+# FUNCIÓN DE SÍNTESIS DE VOZ (gTTS + PYGAME)
 # =================================================================
 
 def read_text_aloud(text_to_speak: str) -> None:
@@ -38,7 +55,7 @@ def read_text_aloud(text_to_speak: str) -> None:
     Convierte texto a audio usando Google TTS (gTTS) y lo reproduce
     con acento de México (tld='com.mx') para mayor naturalidad.
     """
-    print("\n[TTS] 🗣️ Generando audio con Google TTS...")
+    print("\n[TTS] Generando audio con Google TTS...")
     output_file = "temp_gtts_audio.mp3"
 
     try:
@@ -71,7 +88,7 @@ def read_text_aloud(text_to_speak: str) -> None:
                 pass  # Ignorar errores al borrar
 
 # =================================================================
-# 🧠 FUNCIÓN DE LLAMADA A LA API DE GEMINI
+# FUNCIÓN DE LLAMADA A LA API DE GEMINI
 # =================================================================
 
 def send_prompt_to_gemini_multimodal(prompt_text: str, image_path: str) -> str:
@@ -123,7 +140,7 @@ def send_prompt_to_gemini_multimodal(prompt_text: str, image_path: str) -> str:
         return f"Error desconocido: {e}"
 
 # =================================================================
-# 📸 FUNCIÓN DE CAPTURA DE WEBCAM
+# FUNCIÓN DE CAPTURA DE WEBCAM
 # =================================================================
 
 def capture_and_save_image(path: str) -> bool:
@@ -152,7 +169,7 @@ def capture_and_save_image(path: str) -> bool:
     return ret
 
 # =================================================================
-# 🚀 FUNCIÓN PRINCIPAL REUTILIZABLE PARA EL MR INTEGRADO
+# FUNCIÓN PRINCIPAL REUTILIZABLE PARA EL MR INTEGRADO
 # =================================================================
 
 def describir_entorno_una_vez() -> None:
@@ -162,7 +179,7 @@ def describir_entorno_una_vez() -> None:
     """
     # 0. Verificar la configuración de la API
     if not os.environ.get("GOOGLE_API_KEY"):
-        print("\n--- 🛑 ERROR DE CONFIGURACIÓN ---")
+        print("\n--- ERROR DE CONFIGURACIÓN ---")
         print("La clave API de Gemini no está configurada.")
         print("Por favor, ejecuta: export GOOGLE_API_KEY='TuClave'")
         return
@@ -189,7 +206,7 @@ def describir_entorno_una_vez() -> None:
     read_text_aloud(response_text)
 
 # =================================================================
-# 🧪 MODO PRUEBA (para usar este archivo solo)
+# MODO PRUEBA (para usar este archivo solo)
 # =================================================================
 
 def main():
