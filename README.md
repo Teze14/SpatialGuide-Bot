@@ -1,4 +1,5 @@
 # Spatial-Guide-Bot
+<img width="585" height="339" alt="image" src="https://github.com/user-attachments/assets/e2988c9f-0316-418e-aba4-b17850892f41" />
 
 # Mini-Rover Guía Espacial Autónomo
 Este proyecto implementa el software de control y lógica principal para un robot guía diseñado para operar en entornos interiores mapeados, proporcionando a los usuarios funcionalidades de navegación asistida por voz y descripción del entorno en tiempo real.
