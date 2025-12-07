@@ -33,12 +33,14 @@ mic_mr.py - "Módulo de entrada de voz (no incluido, pero requerido). Contiene l
 -Clonar el Repositorio:
 
 Bash
+
 git clone https://github.com/Teze14/SpatialGuide-Bot.git
 cd Autonomous-Spatial-Guide-Bot
 
 -Variables de Entorno: Es OBLIGATORIO configurar tu clave API de Google Gemini:
 
 Bash
+
 export GOOGLE_API_KEY='TU_CLAVE_AQUI'
 
 -Configuración de Hardware:
@@ -52,4 +54,5 @@ Configura el bus I2C para el MPU6050 (el código asume bus 7 y dirección 0x68).
 Usa el script de inicio para asegurar que el entorno virtual esté activo:
 
 Bash
+
 ./run_mr.sh
