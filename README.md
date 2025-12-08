@@ -27,7 +27,7 @@ run_mr.sh - Script de Inicio. Inicializa el entorno virtual de Python (venv) y e
 
 mic_mr.py - Módulo de entrada de voz (no incluido, pero requerido). Contiene la función escuchar_y_transcribir() para usar Whisper o similar.
 
-serial_minirover - Firmware de las placas de control . Recibe comandos de PWM por serial (/dev/ttyUSBx) para el control físico de los motores. 
+serial_minirover.ino - Firmware de las placas de control . Recibe comandos de PWM por serial (/dev/ttyUSBx) para el control físico de los motores. 
 Nota: invertir el sentido de los motores en un lado, de lo contrario, en vez de avanzar, girará. Los archivos .ino deben estar en sus carpetas correspondientes para evitar problemas con ArduinoIDE
 
 # Instalación y Configuración
