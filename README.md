@@ -4,7 +4,7 @@
 # Mini-Rover Guía Espacial Autónomo
 Este proyecto implementa el software de control y lógica principal para un robot guía diseñado para operar en entornos interiores mapeados, proporcionando a los usuarios funcionalidades de navegación asistida por voz y descripción del entorno en tiempo real.
 
-El robot utiliza el sistema de voz a texto (Whisper), la API multimodal de Gemini para la visión, y una lógica de control PID/IMU para la ejecución autónoma de rutas.
+El robot utiliza el sistema de voz a texto (Whisper), la API multimodal de Gemini para la visión, y una lógica de control P/IMU para la ejecución autónoma de rutas.
 
 # Funcionalidades Clave
 Comandos de Voz Natural: Acepta comandos de voz para iniciar la navegación a destinos predefinidos (Sanitarios, Torre, Rampa, Servicio Médico).
